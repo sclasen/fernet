@@ -8,9 +8,9 @@ if RUBY_VERSION == '1.8.7'
   require 'shim/base64'
 end
 
-Fernet::Configuration.run
+OldFernet::Configuration.run
 
-module Fernet
+module OldFernet
   def self.generate(secret, encrypt = Configuration.encrypt, &block)
     Generator.new(secret, encrypt).generate(&block)
   end

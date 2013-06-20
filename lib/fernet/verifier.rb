@@ -3,7 +3,7 @@ require 'yajl'
 require 'openssl'
 require 'date'
 
-module Fernet
+module OldFernet
   class Verifier
     attr_reader :token, :data
     attr_accessor :ttl, :enforce_ttl

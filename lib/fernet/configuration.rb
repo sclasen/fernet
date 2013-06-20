@@ -1,5 +1,5 @@
 require 'singleton'
-module Fernet
+module OldFernet
   class Configuration
     include Singleton
 

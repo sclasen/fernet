@@ -3,7 +3,7 @@ require 'yajl'
 require 'openssl'
 require 'date'
 
-module Fernet
+module OldFernet
   class Generator
     attr_accessor :data, :payload
 
