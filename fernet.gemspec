@@ -11,11 +11,11 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "fernet"
+  gem.name          = "fernet-multijson"
   gem.require_paths = ["lib"]
   gem.version       = Fernet::VERSION
 
-  gem.add_dependency "yajl-ruby"
+  gem.add_dependency "multi_json"
 
   gem.add_development_dependency "rspec"
 end
